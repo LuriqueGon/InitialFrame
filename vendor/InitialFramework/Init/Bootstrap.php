@@ -36,7 +36,7 @@ abstract class Bootstrap
             }
         }
 
-        require "../Config/Error/404.php";
+        require "../Config/Error/404/routes.php";
 
     }
 

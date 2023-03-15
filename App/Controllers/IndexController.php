@@ -1,17 +1,19 @@
 <?php
 
 namespace App\Controllers;
+use IF\Controller\Action;
 
-class IndexController 
+class IndexController extends Action
 {
 
     public function index()
     {
-        echo "Index";
+        $this->render('index');
     }
 
     public function formIndex()
     {
         echo "FormIndex";
     }
+
 }

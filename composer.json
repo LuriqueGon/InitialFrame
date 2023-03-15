@@ -1,0 +1,23 @@
+{
+    "name": "luriquegon/initalframework",
+    "description": "Framework padrão para iniciar aplicações usando Routes, Model, Controllers, View, Components, Layout...",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "php": ">=7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "IF\\": "Vendor/InitialFramework/",
+            "Config\\": "Config/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lurique",
+            "email": "LuriqueGon@gmail.com"
+        }
+    ]
+}

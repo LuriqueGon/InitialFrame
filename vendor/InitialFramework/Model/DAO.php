@@ -39,7 +39,6 @@
         {
             $stmt->bindValue($key, $value);
         }
-        // }
 
         public function select(String $rawQuery, Array $params = array()):array|String
         {

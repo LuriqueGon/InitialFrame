@@ -1,6 +1,6 @@
 <?php
 
-namespace IF\Backup;
+namespace IF\Model;
 
 use App\Connection;
 use IF\Model\DAO;

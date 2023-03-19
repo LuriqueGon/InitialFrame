@@ -3,7 +3,7 @@
 namespace IF\Backup;
 
 use App\Connection;
-use IF\Backup\Backup;
+use IF\Model\Backup;
 
 class GetBackup extends Backup
 {

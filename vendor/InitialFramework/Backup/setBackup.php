@@ -3,7 +3,7 @@
 namespace IF\Backup;
 
 use Exception;
-use IF\Backup\Backup;
+use IF\Model\Backup;
 
 class SetBackup extends Backup{
     

@@ -10,7 +10,7 @@ Class MessageDAO extends SQL
     public static function setMessage($message)
     {
         $sql = new SQL;
-        return $sql->rawQuery('INSERT INTO tb_messages (message) VALUES (?)', array(
+        return $sql->rawQuery('INSERT INTO `tb_messages` (`idmessage`, `message`) VALUES (NULL, ?)', array(
             $message
         ));
     }

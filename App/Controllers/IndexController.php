@@ -19,6 +19,7 @@ class IndexController extends Action
     public function formIndex()
     {
         if(MessageDAO::setMessage($_POST['text'])) header('location: /');
+        
     }
 
 }

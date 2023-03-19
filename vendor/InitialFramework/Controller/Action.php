@@ -3,6 +3,8 @@
 namespace IF\Controller;
 
 use App\Models\Message;
+use IF\Backup\GetBackup;
+use IF\Backup\SetBackup;
 
 abstract class Action
 {
@@ -12,6 +14,7 @@ abstract class Action
     {
         $this->view = new \stdClass();
         session_start();
+        $this->backup('GET','false');
     }
     protected  function render($view, $layout = "layout")
     {
@@ -103,5 +106,12 @@ abstract class Action
             unset($array[$key]);
         }
         return $array;
+    }
+
+    private function backup($type, $bool)
+    {
+        if($type == "GET") $backup = new GetBackup;
+        else $backup = new SetBackup;
+        if($bool) $backup->startBackup();
     }
 }
